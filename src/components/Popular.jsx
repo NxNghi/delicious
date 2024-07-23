@@ -28,8 +28,9 @@ function Popular() {
                     return(
                         <SplideSlide>
                             <div className="min-h-96 rounded-3xl overflow-hidden relative">
-                                <p className="absolute left-1/2 bottom-0 translate-x-(-50%) translate-y-0">{recipe.title}</p>
-                                <img className="rounded-3xl absolute w-full h-auto object-cover" src={recipe.image} alt={recipe.title} />
+                                <p className="absolute z-10 w-full h-1/2 flex justify-center items-center left-1/2 bottom-0 -translate-x-1/2 text-xl text-center text-medium text-white translate-y-0 ">{recipe.title}</p>
+                                <img className="rounded-3xl absolute w-full h-full object-cover" src={recipe.image} alt={recipe.title} />
+                                <div className="z-3 absolute w-full h-full bg-gradient-to-t from-black "></div>
                             </div>
                         </SplideSlide>
                     );

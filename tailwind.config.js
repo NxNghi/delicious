@@ -1,10 +1,17 @@
+const { transform } = require('framer-motion')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    
+    extend: {
+      backgroundG: {
+        grayBlack: 'rgba(0,0,0,0), rgba(0, 0, 0, 0.5)',
+      },
+    }
   },
   plugins: [],
 }
