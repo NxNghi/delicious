@@ -1,8 +1,9 @@
 import Pages from './pages/Pages';
+import Category from './components/category';
 function App() {
   return (
-    <div className="App bg-red-100 h-screen">
-      <h1>Hello world</h1>
+    <div className="App bg-red-200 h-screen">
+      <Category/>
       <Pages />
     </div>
   );

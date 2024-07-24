@@ -24,7 +24,7 @@ function Veggie() {
     };    
     return(
         <div className="my-16 mx-0">
-            <h3>Our Veggie</h3>
+            <h3 className="font-bold text-sky-900 text-4xl p-5 ">Our Veggie Pick</h3>
             <Splide options={{
                 perPage: 3,
                 arrows: false,
