@@ -17,8 +17,15 @@ function Cuisine() {
             console.log(params.type);
         },[params.type]
     );
-    return <div>
-
+    return <div className="grid grid-cols-4 gap-2">
+        {cuisine.map((item) => {
+            return (
+                <div key={item.id} className="">
+                    <img src={item.image} alt={item.title} className="w-full rounded-2xl"/>
+                    <h4 className="mx-auto text-center my-0">{item.title}</h4>
+                </div>
+            )
+        })}
     </div>
 }
 export default Cuisine;
