@@ -26,4 +26,4 @@ function Category() {
     );
 }
 
-export default Catego;
+export default Category;
