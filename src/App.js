@@ -5,7 +5,7 @@ import Header from './components/Header';
 import { BrowserRouter } from 'react-router-dom';
 function App() {
   return (
-    <div className="App bg-red-200 h-screen w-screen pt-8">
+    <div className="App bg-red-200 h-full w-screen">
       <BrowserRouter>
         <Header />
         <Search />
