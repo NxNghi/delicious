@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from "react";
 import {useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Cuisine() {
@@ -20,8 +21,10 @@ function Cuisine() {
         {cuisine.map((item) => {
             return (
                 <div key={item.id} className="">
+                    <Link to={'/recipe/'+ item.id}>
                     <img src={item.image} alt={item.title} className="w-full rounded-2xl"/>
                     <h4 className="mx-auto text-center my-0">{item.title}</h4>
+                    </Link>
                 </div>
             )
         })}

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+import { GiKnifeFork } from 'react-icons/gi';
 
 function Header() {
     const listNav = [
@@ -27,8 +29,9 @@ function Header() {
     
     return (
         <div className="flex justify-between items-center w-full h-16 px-8 bg-gray-100/50 sticky z-10 top-0 mb-8 shadow-xl">
-            <div className="rounded-full bg-sky-500 truncate w-14 h-14">
-                <img src={logo} alt="img-logo" />
+            <div to={'/'} className="rounded-full bg-sky-500 truncate w-14 h-14">
+                <GiKnifeFork />
+                <h3>Delicious</h3>
             </div>
             <div className="flex">
                 <nav>

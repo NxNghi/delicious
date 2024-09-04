@@ -23,3 +23,6 @@
 .cate__menu:hover, .cate__menu:focus, .cate__menu:active {
     background: linear-gradient(to right, #f27121, #e94057);
 }
+
+#active {
+}
