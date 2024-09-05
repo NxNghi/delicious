@@ -11,16 +11,14 @@ function Cuisine() {
         const recipes = await data.json();
         setCuisine(recipes.results);
     };
-    useEffect(
-        () => {
+    useEffect(() => {
             getCuisine(params.type);
             console.log(params.type);
-        },[params.type]
-    );
+        },[params.type]);
     return <div className="grid grid-cols-4 gap-2">
         {cuisine.map((item) => {
             return (
-                <div key={item.id} className="">
+                <div animate={{opacity: 1}} initial={{opacity: 0}} key={item.id} className="">
                     <Link to={'/recipe/'+ item.id}>
                     <img src={item.image} alt={item.title} className="w-full rounded-2xl"/>
                     <h4 className="mx-auto text-center my-0">{item.title}</h4>

@@ -29,9 +29,11 @@ function Header() {
     
     return (
         <div className="flex justify-between items-center w-full h-16 px-8 bg-gray-100/50 sticky z-10 top-0 mb-8 shadow-xl">
-            <div to={'/'} className="rounded-full bg-sky-500 truncate w-14 h-14">
-                <GiKnifeFork />
-                <h3>Delicious</h3>
+            <div>
+                <Link to={"/"} className='flex text-cyan-50 items-center justify-center'>
+                    <GiKnifeFork className='w-10 h-10'/>
+                    <h3 className='ml-4 font-serif text-inherit'>Delicious</h3>
+                </Link>
             </div>
             <div className="flex">
                 <nav>
